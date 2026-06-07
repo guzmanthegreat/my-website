@@ -52,6 +52,11 @@ nav a:hover {
 
 }
 
+.dark-mode {
+  background-color: #111;
+  color: white;
+}
+
 div a {
     margin: .5rem;
 }
