@@ -1,4 +1,4 @@
-# CS2240 Project 1
+# Personal Website
 
 **Full Name:** Josh Guzman  
 **GitHub Repo:** https://github.com/guzmanthegreat/my-website.git  

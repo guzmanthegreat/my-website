@@ -10,28 +10,30 @@ body {
     margin: 0;
 }
 
+section {
+    text-align: center;
+}
+
 header {
     text-align: center;
 }
 
 nav {
     background-color: #b0b0b0;
-    padding: 20px;
+    padding: 15px;
 }
 
-section {
-    text-align: center;
-}
-
-a {
-    margin: 2rem;
+nav a {
+    display: inline-block;
+    margin: 0 2rem;
     font-size: clamp(16px, 1.5vw, 24px);
+    padding: 40px;
+    text-decoration: none;
+    border-radius: 100px;
 }
 
 nav a:hover {
     background-color: #000000;
-    padding: 5px;
-    border-radius: 100px;
     color: white;
 }
 
@@ -64,4 +66,8 @@ footer {
 
 ul {
     list-style-position: inside;
+}
+
+body header nav a {
+    padding: 10px;
 }
