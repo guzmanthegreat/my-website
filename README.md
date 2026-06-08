@@ -1,5 +1,5 @@
 # Personal Website
 
 **Full Name:** Josh Guzman  
-**GitHub Repo:** https://github.com/guzmanthegreat/my-website.git  
-**IDE:** Visual Studio Code
+**IDE:** Visual Studio Code<br>
+**Tech Stack:** Javascript, HTML, CSS
