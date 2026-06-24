@@ -1,27 +1,33 @@
-/*const title = document.getElementById("cool-title");
+document.addEventListener("DOMContentLoaded", () => {
+  const themeToggle = document.getElementById("themeToggle");
 
-title.addEventListener("DOM", () => {
-    title.style.color = "darkgreen";
+  // Check saved theme when page loads
+  if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark-theme");
+  }
+
+  // Stop here if this page does not have the button
+  if (!themeToggle) {
+    return;
+  }
+
+  // Change theme when button is clicked
+  themeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark-theme");
+
+    if (document.body.classList.contains("dark-theme")) {
+      localStorage.setItem("theme", "dark");
+      themeToggle.textContent = "☀️";
+    } else {
+      localStorage.setItem("theme", "light");
+      themeToggle.textContent = "🌙";
+    }
+  });
+
+  // Set correct icon when page loads
+  if (document.body.classList.contains("dark-theme")) {
+    themeToggle.textContent = "☀️";
+  } else {
+    themeToggle.textContent = "🌙";
+  }
 });
-
-title.addEventListener("mouseout", () => {
-  title.style.color = "";
-});
-*/
-document.addEventListener("DOMContentLoaded",  () => {
-  const textElement = document.getElementById("cool-title");
-
-  setInterval(() => {
-    textElement.style.color =
-      textElement.style.color === "green" ? "black" : "green";
-  }, 500);
-});
-
-
-
-const darkModeButton = document.getElementById("darkModeButton");
-
-darkModeButton.addEventListener("click", () => {
-  document.body.classList.toggle("dark-mode");
-});
-

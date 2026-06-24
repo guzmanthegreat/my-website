@@ -1,5 +1,5 @@
 html {
-    background-color: #F4F4F4;
+    background-color: #fff257;
         font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -18,23 +18,51 @@ header {
     text-align: center;
 }
 
-nav {
-    background-color: #b0b0b0;
+.navBar {
+    background-color: #ff8c42;
     padding: 15px;
+    position: relative
+
 }
 
-nav a {
-    display: inline-block;
-    margin: 0 2rem;
-    font-size: clamp(16px, 1.5vw, 24px);
-    padding: 40px;
-    text-decoration: none;
-    border-radius: 100px;
+.nav-button {
+  display: inline-block;
+  margin: 0 1rem;
+  padding: 12px 22px;
+
+  background: linear-gradient(135deg, #6C8EAD, #A23E48);
+  color: white;
+
+  text-decoration: none;
+  font-size: clamp(16px, 1.5vw, 22px);
+  font-weight: bold;
+  letter-spacing: 0.5px;
+
+  border-radius: 999px;
+  cursor: pointer;
+
+  box-shadow: 0 5px 0 #5f2430, 0 8px 16px rgba(0, 0, 0, 0.25);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    filter 0.2s ease;
 }
 
-nav a:hover {
-    background-color: #000000;
-    color: white;
+.nav-button:hover {
+  transform: translateY(-3px);
+  filter: brightness(1.1);
+  box-shadow: 0 8px 0 #5f2430, 0 12px 22px rgba(0, 0, 0, 0.3);
+}
+
+.nav-button:active {
+  transform: translateY(3px);
+  box-shadow: 0 2px 0 #5f2430, 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.nav-button:focus {
+  outline: 3px solid #fff257;
+  outline-offset: 4px;
 }
 
 
@@ -42,7 +70,7 @@ nav a:hover {
     font-size: 5vw;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: #222;
+    color: #a23e48;
     text-shadow: 3px 3px 0px #b8c0ff;
     min-height: 80vh;
     display: flex;
@@ -52,7 +80,7 @@ nav a:hover {
 
 }
 
-.dark-mode {
+body.dark-mode {
   background-color: #111;
   color: white;
 }
@@ -75,4 +103,45 @@ ul {
 
 body header nav a {
     padding: 10px;
+}
+
+
+
+
+/* Dark mode page colors */
+body.dark-theme {
+  background-color: #111;
+  color: white;
+}
+
+/* Dark mode button only */
+.theme-toggle {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+
+  width: 45px;
+  height: 45px;
+
+  border: none;
+  border-radius: 50%;
+  background-color: #222;
+  color: white;
+
+  font-size: 22px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.theme-toggle:hover {
+  transform: scale(1.08);
+}
+
+.theme-toggle:active {
+  transform: scale(0.95);
 }
