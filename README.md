@@ -1,6 +1,6 @@
 # Personal Website
 
-A personal portfolio site built from scratch with vanilla HTML, CSS, and JavaScript. No frameworks, no libraries — just clean fundamentals.
+A personal portfolio site built from scratch with vanilla HTML, CSS, and JavaScript. No frameworks, no libraries.
 
 > Currently under construction — more coming soon.
 
