@@ -31,3 +31,16 @@ document.addEventListener("DOMContentLoaded", () => {
     themeToggle.textContent = "🌙";
   }
 });
+
+window.addEventListener("load", function () {
+  const loaderWrapper = document.getElementById("loader-wrapper");
+  const content = document.getElementById("content");
+
+  if (loaderWrapper) {
+    loaderWrapper.style.display = "none";
+  }
+
+  if (content) {
+    content.style.display = "block";
+  }
+});
