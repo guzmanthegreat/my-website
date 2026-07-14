@@ -41,6 +41,6 @@ window.addEventListener("load", function () {
   }
 
   if (content) {
-    content.style.display = "block";
+    content.style.display = "flex";
   }
 });

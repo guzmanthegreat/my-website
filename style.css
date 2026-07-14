@@ -316,7 +316,9 @@ table {
 
 /* Hide page while loading */
 #content {
+  min-height: 100vh;
   display: none;
+  flex-direction: column;
 }
 
 .key-words {
