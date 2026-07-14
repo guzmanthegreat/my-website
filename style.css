@@ -1,7 +1,6 @@
 @font-face {
   font-family: 'Freshman';
-  src: url('/images/Freshman.ttf') format('truetype');
-  font-weight: normal;
+  Ssrc: url('./images/Freshman.ttf') format('truetype');  font-weight: normal;
   font-style: normal;
 }
 
