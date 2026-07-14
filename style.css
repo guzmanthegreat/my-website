@@ -1,12 +1,12 @@
 @font-face {
   font-family: 'Freshman';
-  src: url('./images/Freshman.ttf') format('truetype');  font-weight: normal;
+  src: url('./fonts/Freshman.ttf') format('truetype');  font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'milk-and-honey';
-  src: url('images/Milk And Honey.otf') format('truetype');
+  src: url('fonts/Milk And Honey.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -35,8 +35,9 @@ section {
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  padding-top: 120px;
 }
 
 header {
@@ -105,10 +106,6 @@ header {
 body.dark-mode {
   background-color: #111;
   color: white;
-}
-
-section {
-    text-align: center;
 }
 
 footer {
@@ -324,4 +321,21 @@ table {
 
 .key-words {
   color: #D99A32
+}
+
+.circle-crop {
+  width: 250px;          /* Width and height must be exactly the same */
+  height: 250px;         
+  border-radius: 50%;    /* Turns the square box into a circle */
+  object-fit: cover;     /* Prevents the image from stretching/squishing */
+  object-position: center; /* Centers the face or focal point */
+}
+
+.hike-image {
+  width: 250px;
+  height: 250px;         
+}
+
+.movie-poster {
+  height: 300px;
 }
