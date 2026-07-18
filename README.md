@@ -16,4 +16,3 @@ Live site: [guzmanthegreat.github.io/personal-website](https://guzmanthegreat.gi
 
 - **Home** — intro and overview
 - **About** — background and interests
-- **Contact** — ways to reach me
