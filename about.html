@@ -5,7 +5,8 @@
         <title>About</title>
         <link rel="stylesheet" href="style.css">
         <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-
+        <style>@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+        </style>
     </head>
 
     <body>
@@ -121,18 +122,18 @@
 
                 <section class="random-facts-section">
                     <h1 class="section-title">Random Facts:</h1>
-                    <div>
-                        <figure>
-                            <img src="images/snuba.png" alt="snuba photo" class="circle-crop">
-                            <figcaption>I've been stung by jellyfish twice.</figcaption>
-                        </figure>
+                    <div class="polaroid" id="snuba-pic">
+                            <img src="images/snuba.png" alt="snuba photo">
+                            <div class="contaner">
+                                <p class="permanent-marker-regular">I've been stung by jellyfish twice.</p>
+                            </div>
                     </div>
                         
-                    <div>
-                        <figure>
-                            <img src="images/oahu.png" alt="view from hike" class="hike-image">
-                            <figcaption>I enjoy being outdoors.</figcaption>
-                        </figure>
+                    <div class="polaroid">
+                            <img src="images/oahu.png" alt="view from hike">
+                            <div class="container">
+                                <p class="permanent-marker-regular">I enjoy being outdoors.</p>
+                            </div>
                     </div>
                 </section>
 
@@ -149,31 +150,43 @@
 
                         <tbody>
                             <tr>
-                                <td><a href="https://www.imdb.com/title/tt31193180/"><img src="https://m.media-amazon.com/images/M/MV5BNjIwZWY4ZDEtMmIxZS00NDA4LTg4ZGMtMzUwZTYyNzgxMzk5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Sinners" class="movie-poster"></a></td>
                                 <td>
-                                    <img src="images/star.png" alt="Star" style="height: 20px;">
-                                    <img src="images/star.png" alt="Star" style="height: 20px;">
-                                    <img src="images/star.png" alt="Star" style="height: 20px;">
-                                    <img src="images/star.png" alt="Star" style="height: 20px;">
+                                    <a href="https://www.imdb.com/title/tt31193180/">
+                                        <img src="https://m.media-amazon.com/images/M/MV5BNjIwZWY4ZDEtMmIxZS00NDA4LTg4ZGMtMzUwZTYyNzgxMzk5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Sinners">
+                                    </a>
+                                </td>
+                                <td>
+                                    <img src="images/star.png" style="height: 20px;">
+                                    <img src="images/star.png" style="height: 20px;">
+                                    <img src="images/star.png" style="height: 20px;">
+                                    <img src="images/star.png" style="height: 20px;">
                                 </td>
                                 <td>"Remmick was wronged."</td>
                             </tr>
 
                             <tr>
-                                <td><a href="https://www.imdb.com/title/tt26581740/"><img src="https://m.media-amazon.com/images/M/MV5BNTBhNWJjZWItYzY3NS00M2NkLThmOWYtYTlmNzBmN2UxZWFjXkEyXkFqcGc@._V1_.jpg" alt="Weapons" class="movie-poster" style="width: 210px;"></a></td>
                                 <td>
-                                    <img src="images/star.png" alt="Star" style="height: 20px;">
-                                    <img src="images/star.png" alt="Star" style="height: 20px;">
+                                    <a href="https://www.imdb.com/title/tt26581740/">
+                                        <img src="https://m.media-amazon.com/images/M/MV5BNTBhNWJjZWItYzY3NS00M2NkLThmOWYtYTlmNzBmN2UxZWFjXkEyXkFqcGc@._V1_.jpg" alt="Weapons">
+                                    </a>
+                                </td>
+                                <td>
+                                    <img src="images/star.png" style="height: 20px;">
+                                    <img src="images/star.png" style="height: 20px;">
                                 </td>
                                 <td>"What even was this movie?"</td>
                             </tr>
 
                             <tr>
-                                <td style="padding: 10px;"><a href="https://www.imdb.com/title/tt26342662/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAVumpwWOLcEeLWOGQAVdvKIwagvbxNHuEji98TYbB6g&s=10" alt="M3GAN 2.0" class="movie-poster"></a></td>
-                                <td style="padding: 10px;">
-                                    <img src="images/star.png" alt="Star" style="height: 20px;">
-                                    <img src="images/star.png" alt="Star" style="height: 20px;">
-                                    <img src="images/star.png" alt="Star" style="height: 20px;">
+                                <td>
+                                    <a href="https://www.imdb.com/title/tt26342662/">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAVumpwWOLcEeLWOGQAVdvKIwagvbxNHuEji98TYbB6g&s=10" alt="M3GAN 2.0">
+                                    </a><
+                                </td>
+                                <td>
+                                    <img src="images/star.png" style="height: 20px;">
+                                    <img src="images/star.png" style="height: 20px;">
+                                    <img src="images/star.png" style="height: 20px;">
                                 </td>
                                 <td>"Passably entertaining movie about AI"</td>
                             </tr>
