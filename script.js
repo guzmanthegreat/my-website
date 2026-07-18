@@ -1,3 +1,4 @@
+//dark/light theme logic
 document.addEventListener("DOMContentLoaded", () => {
   const themeToggle = document.getElementById("themeToggle");
 
@@ -30,8 +31,10 @@ document.addEventListener("DOMContentLoaded", () => {
   } else {
     themeToggle.textContent = "🌙";
   }
+
 });
 
+//loader screen logic
 window.addEventListener("load", function () {
   const loaderWrapper = document.getElementById("loader-wrapper");
   const content = document.getElementById("content");
@@ -45,3 +48,11 @@ window.addEventListener("load", function () {
   }
 });
 
+//title page flash logic
+const homepageTitle = document.getElementById("homepage-title")
+setInterval(() => {
+  homepageTitle.style.visibility =
+    homepageTitle.style.visibility === "hidden"
+      ? "visible"
+      : "hidden";
+}, 300);
