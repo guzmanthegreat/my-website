@@ -56,3 +56,7 @@ setInterval(() => {
       ? "visible"
       : "hidden";
 }, 300);
+
+document.getElementById("quote-button").addEventListener("click", function() {
+  alert('The best way to predict the future is to invent it. - Alan Kay');
+});
