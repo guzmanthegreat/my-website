@@ -19,17 +19,25 @@ document.addEventListener("DOMContentLoaded", () => {
     if (document.body.classList.contains("dark-theme")) {
       localStorage.setItem("theme", "dark");
       themeToggle.textContent = "☀️";
+      themeToggle.style.backgroundColor = "#ffd7b2";
+
+
     } else {
       localStorage.setItem("theme", "light");
       themeToggle.textContent = "🌙";
+      themeToggle.style.backgroundColor = "#222";
     }
   });
 
   // Set correct icon when page loads
   if (document.body.classList.contains("dark-theme")) {
     themeToggle.textContent = "☀️";
+    themeToggle.style.backgroundColor = "#ffd7b2";
+
   } else {
     themeToggle.textContent = "🌙";
+    themeToggle.style.backgroundColor = "#222";
+
   }
 
 });
