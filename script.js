@@ -56,15 +56,17 @@ window.addEventListener("load", function () {
   }
 });
 
-//title page flash logic
+// title page flash logic
 const homepageTitle = document.getElementById("homepage-title")
 setInterval(() => {
   homepageTitle.style.visibility =
     homepageTitle.style.visibility === "hidden"
       ? "visible"
       : "hidden";
-}, 300);
+}, 450);
 
+
+// quote button logic
 document.getElementById("quote-button").addEventListener("click", function() {
   alert('The best way to predict the future is to invent it. - Alan Kay');
 });
